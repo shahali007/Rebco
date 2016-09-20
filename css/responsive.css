@@ -1,0 +1,44 @@
+
+/*Desktop : Medium : 1280px */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    #wowslider-container1 .ws_images > div > img {
+        max-height:500px;
+    }
+}
+
+/*Tablet layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    #wowslider-container1 .ws_images > div > img {
+        max-height:500px;
+    }
+}
+
+/*Mobile layout: 320px. */
+@media only screen and (max-width: 767px){
+    #header {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    #header .navbar-brand {
+        width: 150px;
+        padding-top:10px;
+    }
+    #header .navbar-nav li a {
+        border-right: 0;
+    }
+    #header .navbar-nav {
+        border: 0;
+    }
+    #wowslider-container1 {
+        margin: 70px auto 0;
+    }
+    footer .copyright{
+        text-align: center;
+    }
+
+}
+
+/*Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+}

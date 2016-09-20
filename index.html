@@ -1,31 +1,33 @@
 <!Doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rebco</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="engine1/style.css" />
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body id="home" data-spy="scroll" data-target="#phy">
 
-<div id="home"></div>
 <!--====================| Start Header area |====================-->
 <header id="header" class="navbar navbar-default navbar-static-top navbar-fixed-top" >
     <div class="container">
         <div class="navbar-header">
             <a href="" class="navbar-brand"><img src="images/logo.png" alt="Logo" class="img-responsive"></a>
-            <button type="button" data-toggle='collapse' data-target='#bainchod' class="navbar-toggle">
+            <button type="button" data-toggle='collapse' data-target='#phy' class="navbar-toggle">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
         </div>
-        <div class="navbar-collapse collapse" id="bainchod">
+        <div class="navbar-collapse collapse" id="phy">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home">Home</a></li>
+                <li class="active"><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -37,14 +39,14 @@
 
 
 <!--====================| Start Slider area |====================-->
-<div id="wowslider-container1">
+<div id="wowslider-container1" class="slider">
     <div class="ws_images text-center">
         <ul>
-            <li><img src="images/111.jpg" alt="" title="" id="wows1_0"/><h1>Hello 1st</h1><br><h3>Lorem ipsum dolor sit amet.</h3></li>
-            <li><img src="images/222.jpg" alt="" title="" id="wows1_1"/><h1>Hello 2nd</h1></li>
-            <li><img src="images/33.jpg" alt="" title="" id="wows1_2"/><h1>Hello 3rd</h1></li>
-            <li><img src="images/44.jpg" alt="" title="" id="wows1_3"/><h1>Hello 4th</h1></li>
-            <li><img src="images/55.jpg" alt="" title="" id="wows1_4"/><h1>Hello 5th</h1></li>
+            <li><img src="images/11.jpg" alt="" title=""/><h1>Hello 1st</h1><br><h3>Lorem ipsum dolor sit amet.</h3></li>
+            <li><img src="images/22.jpg" alt="" title="" /><h1>Hello 2nd</h1></li>
+            <li><img src="images/33.jpg" alt="" title="" /><h1>Hello 3rd</h1></li>
+            <li><img src="images/44.jpg" alt="" title="" /><h1>Hello 4th</h1></li>
+            <li><img src="images/111.jpg" alt="" title=""/><h1>Hello 5th</h1></li>
         </ul>
     </div>
 </div>
@@ -72,21 +74,12 @@
             </div>
             <div class="col-md-6">
                 <div class="row text-center">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="single-about">
                             <h4>Name</h4>
                             <img src="images/team2.jpg" alt="About" class="img-responsive">
                             <div class="about-info">
                                 <p>CEO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="single-about">
-                            <h4>Name</h4>
-                            <img src="images/team1.jpg" alt="About" class="img-responsive">
-                            <div class="about-info">
-                                <p>CPO</p>
                             </div>
                         </div>
                     </div>
@@ -107,49 +100,49 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="single-item">
                     <img src="images/22.jpg" alt="Gallery image" class="img-responsive">
                     <a href="images/22.jpg" data-lightbox="rebco"><i class="fa fa-eye"></i></a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="single-item">
                     <img src="images/33.jpg" alt="Gallery image" class="img-responsive">
                     <a href="images/33.jpg" data-lightbox="rebco"><i class="fa fa-eye"></i></a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="single-item">
                     <img src="images/22.jpg" alt="Gallery image" class="img-responsive">
                     <a href="images/22.jpg" data-lightbox="rebco"><i class="fa fa-eye"></i></a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="single-item">
                     <img src="images/11.jpg" alt="Gallery image" class="img-responsive">
                     <a href="images/11.jpg" data-lightbox="rebco"><i class="fa fa-eye"></i></a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="single-item">
                     <img src="images/11.jpg" alt="Gallery image" class="img-responsive">
                     <a href="images/11.jpg" data-lightbox="rebco"><i class="fa fa-eye"></i></a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="single-item">
                     <img src="images/22.jpg" alt="Gallery image" class="img-responsive">
                     <a href="images/22.jpg" data-lightbox="rebco"><i class="fa fa-eye"></i></a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="single-item">
                     <img src="images/33.jpg" alt="Gallery image" class="img-responsive">
                     <a href="images/33.jpg" data-lightbox="rebco"><i class="fa fa-eye"></i></a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="single-item">
                     <img src="images/22.jpg" alt="Gallery image" class="img-responsive">
                     <a href="images/22.jpg" data-lightbox="rebco"><i class="fa fa-eye"></i></a>
@@ -191,15 +184,15 @@
                     <form action="" method="POST">
                         <div class="">
                             <label for="name"></label>
-                            <input type="text" name="" id="name" class="form-control" placeholder="Your Name">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
                         </div>
                         <div class="">
                             <label for="email"></label>
-                            <input type="text" name="" id="email" class="form-control" placeholder="Email address">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Email address">
                         </div>
                         <div class="">
                             <label for="msg"></label>
-                            <textarea name="" id="msg" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
+                            <textarea name="msg" id="msg" cols="30" rows="8" class="form-control" placeholder="Message"></textarea>
                         </div>
                     </form>
                 </div>
@@ -214,12 +207,12 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-5 col-sm-6">
                 <div class="copyright">
                     <p>Powered by <a href="#">Eunoia I.T. Solutions</a></p>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-7 col-sm-6 hidden-xs">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -240,7 +233,9 @@
     <script src="engine1/script.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/custom.js"></script>
+<script>
 
+</script>
 
 </body>
 </html>

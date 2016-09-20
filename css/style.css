@@ -1,3 +1,10 @@
+@font-face {
+    font-family: ChampagneLimousines;
+    src: url(../fonts/ChampagneLimousines.ttf),
+         url(../fonts/ChampagneLimousinesBold.ttf),
+         url(../fonts/ChampagneLimousinesItalic.ttf),
+         url(../fonts/ChampagneLimousinesBoldItalic.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -19,66 +26,77 @@ h6,
 p{
     margin-bottom: 15px;
 }
-
+html,body{
+}
 body{
-    /*background: #D6D1CB;*/
+    font-family: ChampagneLimousines;
+    font-size: 18px;
 }
 .title{}
 .title h2{
     text-transform: uppercase;
     color: #0B562E;
-    letter-spacing: -1px;
     font-weight: bold;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 /*====================| Start Header area |====================-->*/
 #header {
-    padding-top:25px ;
-    padding-bottom:25px ;
+    padding-top:15px ;
+    padding-bottom:15px ;
 }
 #header .navbar-brand {
     width: 200px;
     height: auto;
-    padding-top: 10px;
+    padding-top: 0;
     padding-bottom: 0;
 }
 #header.navbar-default{
     background-color: #fff!important;
     border-color: none!important;
 }
-#header .navbar-header span{}
 #header .navbar-nav{
-    border:1px solid #f1f1f1;
+
 }
 #header .navbar-nav li{}
 #header .navbar-nav li a{
-    border-right: 1px solid #f1f1f1;
-    font-size: 16px;
-    padding-left: 30px;
-    padding-right: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-right: 3px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s ;
     -ms-transition: all 0.3s ;
     -o-transition: all 0.3s ;
     transition: all 0.3s ;
 }
+#header ul.nav li.active > a {
+    background: #0D5630;
+    color: #fff;
+}
 #header .navbar-nav li:last-child a{
     border-right: none;
 }
 #header .navbar-nav li a:hover{
-    color: #000!important;
-    background: #f1f1f1!important;
+    color: #fff!important;
+    background: #0D5630!important;
+    opacity: 0.9;
 }
 #header .navbar-brand img{}
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
     background-color: #0B562E;
 }
-
+#header .navbar-right{
+    margin-right:0;
+}
 .navbar-default .navbar-toggle {
     border-color:#0B562E;
 }
-
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #fff;
+}
 /*====================| Start Slider area |====================-->*/
 
 
@@ -101,6 +119,7 @@ body{
     -ms-transition: all 0.3s ;
     -o-transition: all 0.3s ;
     transition: all 0.3s ;
+    margin-bottom:30px;
 }
 .about .single-about .about-info{
     padding:5px 15px;
@@ -155,9 +174,11 @@ body{
     -o-transition: all 0.3s ;
     transition: all 0.3s ;
     z-index:2;
+    transform: scale(0.1);
 }
 .gallery .single-item:hover::before{
-    opacity: 0.9;
+    opacity: 0.6;
+    transform: scale(1);
 }
 .gallery .single-item img{
     -webkit-transition: all 0.3s;
@@ -172,29 +193,38 @@ body{
 }
 
 .gallery .single-item a{
-    left: 50%;
+    left: 0;
     position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%)  scale(.2);
+    top: 0;
     z-index: 3;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    line-height: 35px;
     color: #fff;
-    border-radius: 100%;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s ;
     -ms-transition: all 0.3s ;
     -o-transition: all 0.3s ;
     transition: all 0.3s ;
     z-index:3;
-    opacity: 0;
+    opacity: 1;
+}
+.gallery .single-item i{
+    top: -50%;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+    font-size: 24px;
+}
+.gallery .single-item:hover i{
+    top: 50%;
+    transform: translateX(-50%);
 }
 .gallery .single-item:hover a{
     opacity: 1;
-    transform: translate(-50%, -50%)  scale(1);
 }
 
 /*====================| Start contact area |====================-->*/
@@ -239,7 +269,11 @@ footer .navbar-nav{}
 footer .navbar-nav li{}
 footer .navbar-nav li a{}
 footer .navbar-nav li a:hover{}
+
 /*====================| Start  area |====================-->*/
+.lb-nav a.lb-prev, .lb-nav a.lb-next {
+    opacity: 0.5;
+}
 /*====================| Start  area |====================-->*/
 /*====================| Start  area |====================-->*/
 /*====================| Start  area |====================-->*/
