@@ -53,27 +53,32 @@ body{
 }
 #header.navbar-default{
     background-color: #fff!important;
-    border-color: none!important;
+    border-color: transparent!important;
 }
 #header .navbar-nav{
 
 }
-#header .navbar-nav li{}
+#header .navbar-nav li{
+
+}
 #header .navbar-nav li a{
     border-radius: 5px;
     font-size: 18px;
     padding: 10px 20px;
-    margin-right: 3px;
+    margin-left: 3px;
+    position: relative;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s ;
     -ms-transition: all 0.3s ;
     -o-transition: all 0.3s ;
     transition: all 0.3s ;
+    overflow: hidden;
 }
 #header ul.nav li.active > a {
     background: #0D5630;
     color: #fff;
 }
+
 #header .navbar-nav li:last-child a{
     border-right: none;
 }
@@ -83,6 +88,7 @@ body{
     opacity: 0.9;
 }
 #header .navbar-brand img{}
+.navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
     background-color: #0B562E;
@@ -93,6 +99,7 @@ body{
 .navbar-default .navbar-toggle {
     border-color:#0B562E;
 }
+.navbar-default .navbar-toggle .icon-bar,
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #fff;
@@ -114,6 +121,7 @@ body{
 .about .single-about{
     background: #fff;
     overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s ;
     -ms-transition: all 0.3s ;
@@ -126,27 +134,38 @@ body{
 }
 .about .single-about h4{
     color: #0B562E;
+    font-weight:bold;
 }
 .about .single-about h4::after {
-    position: absolute;
+    background: #fff;
     content: "";
-    background: #0B562E;
-    width: 3px;
-    height: 30px;
-    left: 15px;
-    top: 0;
+    height: 20px;
+    left: 50%;
+    position: absolute;
+    top: 35px;
+    transform: translateX(-50%) rotate(-45deg);
+    width: 20px;
+    z-index: 2000;
 }
 .about .single-about img{
     width:100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
 }
-.about .single-about p{}
+.about .single-about p span{
+    color: #0B562E;
+    font-size: 14px;
+}
 .about .single-about:hover{
-    background: #0B562E;;
-    color: #fff;
+
 }
-.about .single-about:hover h4{
-    color: #fff;
+.about .single-about:hover img{
+    opacity:0.5;
 }
+
 
 /*====================| Start gallery area |====================-->*/
 .gallery{
@@ -226,7 +245,23 @@ body{
 .gallery .single-item:hover a{
     opacity: 1;
 }
-
+.all-button {
+    background:#0b5830 ;
+    border-radius: 5px;
+    border:1px solid transparent;
+    color: #fff !important;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+}
+.all-button:hover{
+    opacity:0.9;
+}
 /*====================| Start contact area |====================-->*/
 .contact{
     padding-top:50px;

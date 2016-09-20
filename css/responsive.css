@@ -2,7 +2,7 @@
 /*Desktop : Medium : 1280px */
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     #wowslider-container1 .ws_images > div > img {
-        max-height:500px;
+        max-height:800px;
     }
 }
 
@@ -25,9 +25,17 @@
     }
     #header .navbar-nav li a {
         border-right: 0;
+        margin-left:0;
+    }
+    #header .navbar-nav li a:hover,
+    #header .navbar-nav li.active a{
+        border-radius: 0;
     }
     #header .navbar-nav {
         border: 0;
+    }
+    #header .navbar-right {
+        margin-right:-15px;
     }
     #wowslider-container1 {
         margin: 70px auto 0;
