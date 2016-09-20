@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a,
+a:hover,
+a:focus,
+a:active{
+    color: #000;
+    text-decoration: none;
+    outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-bottom: 15px;
+}
+
+body{
+    /*background: #D6D1CB;*/
+}
+.title{}
+.title h2{
+    text-transform: uppercase;
+    color: #0B562E;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+/*====================| Start Header area |====================-->*/
+#header {
+    padding-top:25px ;
+    padding-bottom:25px ;
+}
+#header .navbar-brand {
+    width: 200px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+#header.navbar-default{
+    background-color: #fff!important;
+    border-color: none!important;
+}
+#header .navbar-header span{}
+#header .navbar-nav{
+    border:1px solid #f1f1f1;
+}
+#header .navbar-nav li{}
+#header .navbar-nav li a{
+    border-right: 1px solid #f1f1f1;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+}
+#header .navbar-nav li:last-child a{
+    border-right: none;
+}
+#header .navbar-nav li a:hover{
+    color: #000!important;
+    background: #f1f1f1!important;
+}
+#header .navbar-brand img{}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #0B562E;
+}
+
+.navbar-default .navbar-toggle {
+    border-color:#0B562E;
+}
+
+/*====================| Start Slider area |====================-->*/
+
+
+/*====================| Start about area |====================-->*/
+.about{
+    padding-top:50px;
+    padding-bottom:50px;
+    background: #f1f1f1;
+}
+.about .about-rebco{
+
+}
+.about .about-rebco h3{}
+.about .about-rebco p{}
+.about .single-about{
+    background: #fff;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+}
+.about .single-about .about-info{
+    padding:5px 15px;
+}
+.about .single-about h4{
+    color: #0B562E;
+}
+.about .single-about h4::after {
+    position: absolute;
+    content: "";
+    background: #0B562E;
+    width: 3px;
+    height: 30px;
+    left: 15px;
+    top: 0;
+}
+.about .single-about img{
+    width:100%;
+}
+.about .single-about p{}
+.about .single-about:hover{
+    background: #0B562E;;
+    color: #fff;
+}
+.about .single-about:hover h4{
+    color: #fff;
+}
+
+/*====================| Start gallery area |====================-->*/
+.gallery{
+    padding-top:50px;
+    padding-bottom:50px;
+    background: #f4f4f4;
+}
+.gallery .single-item{
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.gallery .single-item::before{
+    content: '';
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: #0B562E;
+    opacity:0;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+    z-index:2;
+}
+.gallery .single-item:hover::before{
+    opacity: 0.9;
+}
+.gallery .single-item img{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+    z-index:1;
+}
+.gallery .single-item:hover img{
+    transform: scale(1.2);
+}
+
+.gallery .single-item a{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%)  scale(.2);
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+    z-index:3;
+    opacity: 0;
+}
+.gallery .single-item:hover a{
+    opacity: 1;
+    transform: translate(-50%, -50%)  scale(1);
+}
+
+/*====================| Start contact area |====================-->*/
+.contact{
+    padding-top:50px;
+    padding-bottom:50px;
+    background: #f1f1f1;
+}
+.contact address{}
+.contact address p{}
+.contact address i{}
+.contact .custom-contact{}
+.contact .custom-contact form{}
+.contact .custom-contact label{}
+.contact .custom-contact .form-control{}
+.contact .custom-contact .form-control:focus{
+    border:1px solid #0B562E;
+}
+.contact .custom-contact input{
+    border-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    height: 50px;
+}
+.contact .custom-contact textarea{
+    border-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/*====================| Start footer area |====================-->*/
+footer{}
+footer .copyright{
+    padding-top:15px;
+}
+footer .copyright p{}
+footer .copyright a{
+    color: #0B562E;
+    font-weight:bold;
+}
+footer .navbar-nav{}
+footer .navbar-nav li{}
+footer .navbar-nav li a{}
+footer .navbar-nav li a:hover{}
+/*====================| Start  area |====================-->*/
+/*====================| Start  area |====================-->*/
+/*====================| Start  area |====================-->*/
+/*====================| Start  area |====================-->*/
+/*====================| Start  area |====================-->*/
