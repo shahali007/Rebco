@@ -1,3 +1,8 @@
+/*=========== welcome popup ===============*/
+$(window).load(function(){
+    $('#welcome').modal('show');setTimeout(function(){$('#welcome').modal('hide');}, 5000);
+});
+
 $(document).ready(function(){
     $('body').scrollspy({ target: '#phy' });
     $(window).scroll(function(event) {
@@ -20,8 +25,8 @@ $(document).ready(function(){
         });
     }
 
-    /*=========== scrollspy ===============*/
-
+    
+    
 
 });
 
